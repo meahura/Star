@@ -2,9 +2,14 @@
 
 # Tree - Water - Food  - Wind - Pond_Kg
 # Kg - g - centimeter - centimeter_change - Meter_chenage_DC
-# Dc_chenage_Mter - Liter - mCubic_centimeters
+# Dc_chenage_Mter - Liter - mCubic_centimeters - Earth's Humans
 
 # Create Def
+
+from time import sleep
+
+from numpy import cov
+
 
 class star:
     def __init__(
@@ -212,3 +217,32 @@ class star:
 
     # print(Minu_sec(10))
 
+    def sun_proton(secands:float): 
+        from math import pow 
+        proton = 8.9 * pow(10,56) 
+        return f"\033[31m {secands} Equivalent {proton * secands} Perton will be released." 
+
+    # print(star.sun_proton(1))
+
+    def Waterـsolubleـsolids(liter:float): 
+        oz = 1.2
+        # 34-35 g (1.2 oz) per liter
+        return f"\033[31mValue obtained : {liter * oz}" 
+    
+    def covid_19(): 
+        
+        from bs4 import BeautifulSoup 
+        from requests import get ,post
+        # Metakhanid Library Requirements
+        send_requsts = post(url="https://www.worldometers.info/coronavirus/?Si") 
+        bs3 = BeautifulSoup(send_requsts.text , "html.parser")
+        # Submit requests and extract requests from the desired site
+        number = bs3.find(class_="maincounter-number") 
+        covid_20 = ['']
+        for x in number: 
+            covid_20.append(x.text)
+        number_orginal = covid_20[2]  
+        # Print requests in output
+        return(f"\033[31mStatistics of infected people in the world : {number_orginal}")
+    
+    # covid_19()
