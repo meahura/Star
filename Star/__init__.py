@@ -8,9 +8,6 @@
 
 from time import sleep
 
-from numpy import cov
-
-
 class star:
     def __init__(
             self, man, Year, Water_day, Age, meal,
@@ -238,11 +235,30 @@ class star:
         bs3 = BeautifulSoup(send_requsts.text , "html.parser")
         # Submit requests and extract requests from the desired site
         number = bs3.find(class_="maincounter-number") 
+
         covid_20 = ['']
         for x in number: 
             covid_20.append(x.text)
         number_orginal = covid_20[2]  
+        
         # Print requests in output
         return(f"\033[31mStatistics of infected people in the world : {number_orginal}")
-    
-    # covid_19()
+   
+    def mHz(mHz):return (f"\033[31m {mHz} mHz equals : {mHz * 1}ks")
+    def Hz(hz):return (f"\033[31m {hz} hz equals : {hz * 1}s" )
+    def KHz(khz):return (f"\033[31m {khz} equals : {khz * 1}ms") 
+    def Mhz(mhz):return (f"\033[31m {mhz} equals : {mhz * 1}μs")
+    def Ghz(ghz):return(F"\033[31m {ghz} equals : {ghz * 1}ns")
+    def THz(thz):return(f"\033[31m {thz} equals : {thz *1}ps")    
+
+    def signas_info():
+        return (f"""\033[31m
+        Any 1 mhz equals : 1ks
+        Any 1 hz equals : 1s
+        Any 1 khz equals : 1ms
+        Any 1 mhx equals : 1μs
+        Any 1 ghz equals : 1ns
+        Any 1 thz equals : 1ps
+        """)
+
+    # print(star.signas_info())
