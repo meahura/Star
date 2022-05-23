@@ -17,6 +17,10 @@ class star:
         pass
 
     def Tree(man: int, Year: int):
+        r"""
+        With this tool you can do calculations and calculate the oxygen 
+        produced by trees on account of (year) and (month).
+        """
         # Assumption
         man_o2 = man * 730_000
         # The amount of oxygen that humans consume
@@ -43,6 +47,7 @@ class star:
     # Tree(1000,199)
 
     def Water(Water_day: int, Age):
+        r"Measures the amount of water consumed"
         # The amount of water entering should be in liters
         day_year = Water_day * 365
         # Water consumption per year
@@ -63,6 +68,7 @@ class star:
     # Water(10,12)
 
     def Food(meal: int, Age: int):
+        r"They make up for the jokes we consume in a year"
         food = meal * 365
         age = food * Age
         return f"""
@@ -76,6 +82,7 @@ class star:
     # print(Food(3 , 16))
 
     def wc(Numberـofـtoiletsـperـday: int, age: int):
+        r"It measures the water we drink"
         Numberـof = Numberـofـtoiletsـperـday * 365
         # WC in Year
         number_of_age = Numberـof * age
@@ -91,6 +98,7 @@ class star:
     # print(wc(3 , 16))
 
     def Wind(Windـspeedـperـmeter: int):
+        r"It tells the speed of the wind in meters"
         # Wind speed per meter
         Windـspeedـperـ = Windـspeedـperـmeter * 3.6
         # Wind speed in meters per second
@@ -106,6 +114,9 @@ class star:
     # print(Wind(120))
 
     def Pond_Kg(pond: int):
+        r"""To achieve! Calculates the pound! You can convert
+        the pound to other values ​​with this function"""
+        
         all_pond = pond * 0.453592
         # The amount obtained from pounds to kilograms
         pond_by_kg = pond * 453_592
@@ -120,41 +131,49 @@ class star:
     # Pond_Kg(10)
 
     def Kg(kg: int):
+        r"Calculates in grams"
         # Convert kilograms to grams
         gr = kg * 1000
         return f"\33[31m{gr} \033[35mg \033[34m<'https://github.com/ahSiber'>"
 
     def g(g: int):
+        r"Converts grams to kilograms"
         # Convert grams to kilograms
         kg_end = g / 1000
         return f"\33[31m{kg_end} \033[35mgrms \033[34m<'https://github.com/ahSiber'>"
 
     def centimeter(Metr):
+        r"Convert meters to centimeters"
         # Convert meters to centimeters
         mater = Metr * 100
         return F"\33[31m{mater} \033[35mcentimeters \033[34m<'https://github.com/ahSiber'>"
 
     def centimeter_change(centimeters):
+        r"Convert centimeters to meters"
         # Convert centimeters to meters
         mater = centimeters / 100
         return F"\33[31m{mater} \033[35mmeters \033[34m<'https://github.com/ahSiber'>"
 
     def Meter_chenage_DC(Meter):
+        r"Convert meters to decimetres"
         # Convert meters to decimetres
         Dc_meter = Meter * 10
         return f"\33[31m{Dc_meter} \033[35mDecimeter \033[34m<'https://github.com/ahSiber'>"
 
     def Dc_chenage_Mter(DC):
+        r"Convert decimeters to meters"
         # Convert decimeters to meters
         Dc_meter = DC / 10
         return f"\33[31m{Dc_meter} \033[35m Mter \033[34m<'https://github.com/ahSiber'>"
 
     def Liter(liter):
+        r"Convert cubic meters to cubic centimeters"
         # Convert cubic meters to cubic centimeters
         liters = liter * 1000000
         return f"\33[31m{liters}\033[35mCubic centimeters \033[34m<'https://github.com/ahSiber'>"
 
     def mCubic_centimeters(mCubic):
+        r'Convert cubic centimeters to cubic meters'
         # Convert cubic centimeters to cubic meters
         mClub = mCubic / 1000000
         return f"\33[31m{mClub} Liter \033[34m<'https://github.com/ahSiber'>"
@@ -162,6 +181,7 @@ class star:
     # print(mCubic_centimeters(10))
 
     def Decomposition_of_objects(objects_):
+        r'The storage time of some materials'
         obje = ['banana', "Plant", "Paper", "cotton", 'Rope']
         none = ['Clothing', 'shoes', 'Cigarettes']
         if objects_ == obje[0]:
@@ -184,22 +204,11 @@ class star:
             return '\33[31m20 and 50 years'
         elif objects_ == none[2]:
             return "\33[31m1 and 12 years"
-
-    # print(Decomposition_of_objects('banana'))
-
-    def serch_fars(text: str, path):
-        with open('./fa_IR.dic', 'r') as red_file:
-            text_send_def = red_file.read()
-            if text in text_send_def:
-                return f"\033[32mTrue {text} in list db"
-            else:
-                return "\033[31mnot fond"
-
-    # Not support Fasri
-    # print(serch_fars('hello' , "./color_random_txt/Main.file.py"))
+        else:
+            return 'not fond!' 
 
     def secـMinu(Seconds):
-        # Convert seconds to minutes
+        r'Convert seconds to minutes'
         sec = Seconds / 60
         int_sec = int(sec)
         return f"\033[31m{int_sec} \33[34mMinutes"
@@ -207,7 +216,7 @@ class star:
     # print(secـMinu(60))
 
     def Minu_sec(Minutes):
-        # Convert minutes to seconds
+        r'Convert minutes to seconds'
         Minu = Minutes * 60
         int_Minu = int(Minu)
         return f"\033[31m{int_Minu} \33[34mSecond"
@@ -215,6 +224,7 @@ class star:
     # print(Minu_sec(10))
 
     def sun_proton(secands:float): 
+        r'Calculate ports'
         from math import pow 
         proton = 8.9 * pow(10,56) 
         return f"\033[31m {secands} Equivalent {proton * secands} Perton will be released." 
@@ -222,15 +232,14 @@ class star:
     # print(star.sun_proton(1))
 
     def Waterـsolubleـsolids(liter:float): 
+        r'34-35 g (1.2 oz) per liter'
         oz = 1.2
-        # 34-35 g (1.2 oz) per liter
         return f"\033[31mValue obtained : {liter * oz}" 
     
     def covid_19(): 
-        
+        r'covid 19 status'
         from bs4 import BeautifulSoup 
         from requests import get ,post
-        # Metakhanid Library Requirements
         send_requsts = post(url="https://www.worldometers.info/coronavirus/?Si") 
         bs3 = BeautifulSoup(send_requsts.text , "html.parser")
         # Submit requests and extract requests from the desired site
@@ -244,14 +253,32 @@ class star:
         # Print requests in output
         return(f"\033[31mStatistics of infected people in the world : {number_orginal}")
    
-    def mHz(mHz):return (f"\033[31m {mHz} mHz equals : {mHz * 1}ks")
-    def Hz(hz):return (f"\033[31m {hz} hz equals : {hz * 1}s" )
-    def KHz(khz):return (f"\033[31m {khz} equals : {khz * 1}ms") 
-    def Mhz(mhz):return (f"\033[31m {mhz} equals : {mhz * 1}μs")
-    def Ghz(ghz):return(F"\033[31m {ghz} equals : {ghz * 1}ns")
-    def THz(thz):return(f"\033[31m {thz} equals : {thz *1}ps")    
+    def mHz(mHz):
+        r'mHz equalsks'
+        return (f"\033[31m {mHz} mHz equals : {mHz * 1}ks")
+
+    def Hz(hz):
+        r'hz equals' 
+        return (f"\033[31m {hz} hz equals : {hz * 1}s" )
+    
+    def KHz(khz):
+        r'khz'
+        return (f"\033[31m {khz} equals : {khz * 1}ms") 
+   
+    def Mhz(mhz):
+        r'mhz'
+        return (f"\033[31m {mhz} equals : {mhz * 1}μs")
+   
+    def Ghz(ghz):
+        r'ghz'
+        return(F"\033[31m {ghz} equals : {ghz * 1}ns")
+   
+    def THz(thz):
+        r'thz'
+        return(f"\033[31m {thz} equals : {thz *1}ps")    
 
     def signas_info():
+        r'any more..quals'
         return (f"""\033[31m
         Any 1 mhz equals : 1ks
         Any 1 hz equals : 1s
@@ -262,3 +289,9 @@ class star:
         """)
 
     # print(star.signas_info())
+
+    def speed_light(meter): 
+        r'speed to light'
+        speed = 299_792_458
+        return (F"{speed * meter }s")
+
