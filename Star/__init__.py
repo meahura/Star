@@ -18,7 +18,7 @@ class star:
 
     def Tree(man: int, Year: int):
         r"""
-        With this tool you can do calculations and calculate the oxygen 
+        With this tool you can do calculations and calculate the oxygen
         produced by trees on account of (year) and (month).
         """
         # Assumption
@@ -36,11 +36,11 @@ class star:
     \33[1m
     \033[94m
     The amount of oxygen that humans consume : \33[31m{man_o2}
-    \033[94mThe amount of oxygen that trees produce : \33[31m{Tree_o2} 
+    \033[94mThe amount of oxygen that trees produce : \33[31m{Tree_o2}
     \33[32m
     *******************************************************************
     The amount of oxygen that humans consume Year: \33[31m{Year} : {man_o2ـyear}
-    \33[32mThe amount of oxygen that trees produce Year: \33[31m{Year} : {Tree_o2_year} 
+    \33[32mThe amount of oxygen that trees produce Year: \33[31m{Year} : {Tree_o2_year}
 
     \033[1mOwner : \033[35mhttps://github.com/ahSiber/
     '''
@@ -57,11 +57,11 @@ class star:
         # you in \33[31m{Age} \033[34m, \33[31m{Age_wather} \033[34mYou have consumed
         return f"""
     \033[34m
-    Water consumption per year : \33[31m{day_year} 
-    \033[34mThe amount of water consumed by the whole world based on your water consumption per day : \33[31m{year_all} 
-    \033[34myou in \33[31m{Age} \033[34m, \33[31m{Age_wather} \033[34mYou have consumed. 
+    Water consumption per year : \33[31m{day_year}
+    \033[34mThe amount of water consumed by the whole world based on your water consumption per day : \33[31m{year_all}
+    \033[34myou in \33[31m{Age} \033[34m, \33[31m{Age_wather} \033[34mYou have consumed.
 
-    \033[1mOwner : \033[35mhttps://github.com/ahSiber/ 
+    \033[1mOwner : \033[35mhttps://github.com/ahSiber/
 
     """
 
@@ -73,8 +73,8 @@ class star:
         age = food * Age
         return f"""
     \33[32m
-    Number of meals you eat per year (approximate) : \33[31m {food} 
-    \33[32mEat a few meals in your lifetime (approximate) : \33[31m {age} 
+    Number of meals you eat per year (approximate) : \33[31m {food}
+    \33[32mEat a few meals in your lifetime (approximate) : \33[31m {age}
 
     \033[1mOwner : \033[35mhttps://github.com/ahSiber/
     """
@@ -89,8 +89,8 @@ class star:
         # Number of toilets you went to during your lifetime (approximate)
         return f"""
     \33[33m
-    WC in Year : \33[31m{Numberـof} 
-    \33[33mNumber of toilets you went to during your lifetime (approximate) : \33[31m{number_of_age} 
+    WC in Year : \33[31m{Numberـof}
+    \33[33mNumber of toilets you went to during your lifetime (approximate) : \33[31m{number_of_age}
 
     \033[1mOwner : \033[35mhttps://github.com/ahSiber/
     """
@@ -105,8 +105,8 @@ class star:
         WindSpedn = Windـspeedـperـmeter / 3.6
         return F"""
 
-    \33[37mWind speed per meter : \33[31m{Windـspeedـperـmeter} 
-    \33[37mWind speed in meters per second : \33[31m{WindSpedn} 
+    \33[37mWind speed per meter : \33[31m{Windـspeedـperـmeter}
+    \33[37mWind speed in meters per second : \33[31m{WindSpedn}
 
     \033[1mOwner : \033[35mhttps://github.com/ahSiber/
     """
@@ -116,7 +116,7 @@ class star:
     def Pond_Kg(pond: int):
         r"""To achieve! Calculates the pound! You can convert
         the pound to other values ​​with this function"""
-        
+
         all_pond = pond * 0.453592
         # The amount obtained from pounds to kilograms
         pond_by_kg = pond * 453_592
@@ -205,7 +205,7 @@ class star:
         elif objects_ == none[2]:
             return "\33[31m1 and 12 years"
         else:
-            return 'not fond!' 
+            return 'not fond!'
 
     def secـMinu(Seconds):
         r'Convert seconds to minutes'
@@ -223,59 +223,59 @@ class star:
 
     # print(Minu_sec(10))
 
-    def sun_proton(secands:float): 
+    def sun_proton(secands:float):
         r'Calculate ports'
-        from math import pow 
-        proton = 8.9 * pow(10,56) 
-        return f"\033[31m {secands} Equivalent {proton * secands} Perton will be released." 
+        from math import pow
+        proton = 8.9 * pow(10,56)
+        return f"\033[31m {secands} Equivalent {proton * secands} Perton will be released."
 
     # print(star.sun_proton(1))
 
-    def Waterـsolubleـsolids(liter:float): 
+    def Waterـsolubleـsolids(liter:float):
         r'34-35 g (1.2 oz) per liter'
         oz = 1.2
-        return f"\033[31mValue obtained : {liter * oz}" 
-    
-    def covid_19(): 
+        return f"\033[31mValue obtained : {liter * oz}"
+
+    def covid_19():
         r'covid 19 status'
-        from bs4 import BeautifulSoup 
+        from bs4 import BeautifulSoup
         from requests import get ,post
-        send_requsts = post(url="https://www.worldometers.info/coronavirus/?Si") 
+        send_requsts = post(url="https://www.worldometers.info/coronavirus/?Si")
         bs3 = BeautifulSoup(send_requsts.text , "html.parser")
         # Submit requests and extract requests from the desired site
-        number = bs3.find(class_="maincounter-number") 
+        number = bs3.find(class_="maincounter-number")
 
         covid_20 = ['']
-        for x in number: 
+        for x in number:
             covid_20.append(x.text)
-        number_orginal = covid_20[2]  
-        
+        number_orginal = covid_20[2]
+
         # Print requests in output
         return(f"\033[31mStatistics of infected people in the world : {number_orginal}")
-   
+
     def mHz(mHz):
         r'mHz equalsks'
         return (f"\033[31m {mHz} mHz equals : {mHz * 1}ks")
 
     def Hz(hz):
-        r'hz equals' 
+        r'hz equals'
         return (f"\033[31m {hz} hz equals : {hz * 1}s" )
-    
+
     def KHz(khz):
         r'khz'
-        return (f"\033[31m {khz} equals : {khz * 1}ms") 
-   
+        return (f"\033[31m {khz} equals : {khz * 1}ms")
+
     def Mhz(mhz):
         r'mhz'
         return (f"\033[31m {mhz} equals : {mhz * 1}μs")
-   
+
     def Ghz(ghz):
         r'ghz'
         return(F"\033[31m {ghz} equals : {ghz * 1}ns")
-   
+
     def THz(thz):
         r'thz'
-        return(f"\033[31m {thz} equals : {thz *1}ps")    
+        return(f"\033[31m {thz} equals : {thz *1}ps")
 
     def signas_info():
         r'any more..quals'
@@ -290,8 +290,7 @@ class star:
 
     # print(star.signas_info())
 
-    def speed_light(meter): 
+    def speed_light(meter):
         r'speed to light'
         speed = 299_792_458
         return (F"{speed * meter }s")
-
